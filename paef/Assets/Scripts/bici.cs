@@ -22,10 +22,27 @@ public class bici : MonoBehaviour
             this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, 0);
 
         } else {
-            this.gameObject.transform.localPosition = new Vector3(-7, 3, 0);
+           // 
 
         }
         
+    }
+
+    /*void OnCollision2DEnter(Collision2D collision){
+        Debug.Log("Collisión?");
+        
+        
+        this.gameObject.transform.localPosition = new Vector3(-7, 3, 0);
+        
+        
+    }*/
+
+    void OnCollisionEnter2D(Collision2D col){
+        Debug.Log("OnCollisionEnter");
+        if (col.gameObject.tag == "Cuadras") {
+            isBeingHeld=false;
+            this.transform.position = new Vector3(0, 2.6f, 0);
+        }
     }
 
     private void OnMouseDown()
@@ -49,6 +66,8 @@ public class bici : MonoBehaviour
     private void OnMouseUp()
     {
         isBeingHeld = false;
+        this.gameObject.transform.localPosition = new Vector3(0, 2.6f, 0);
+
         
 
     }
