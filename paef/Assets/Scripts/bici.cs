@@ -6,6 +6,7 @@ public class bici : MonoBehaviour
 {
     private float startPosX;
     private float startPosY;
+    private float speed = 0.5f;
     private bool isBeingHeld= false; //para chequear si se esta agarrando
 
     // Start is called before the first frame update

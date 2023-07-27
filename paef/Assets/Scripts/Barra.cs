@@ -10,6 +10,9 @@ public class Barra : MonoBehaviour
 
     Image barraEnergia;
     float maxDistance;
+   
+
+    
 
     private void Awake() {
        
