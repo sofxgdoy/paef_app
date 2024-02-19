@@ -38,6 +38,7 @@ public class bici : MonoBehaviour
         
     }*/
 
+    //esto chequea q si choca contra las cuadras retoma su posición inicial
     void OnCollisionEnter2D(Collision2D col){
         Debug.Log("OnCollisionEnter");
         if (col.gameObject.tag == "Cuadras") {
@@ -46,7 +47,7 @@ public class bici : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
+    private void OnMouseDown()  //esto seria el mov con la bici clickeada
     {
         if(Input.GetMouseButtonDown(0))
         {
@@ -64,7 +65,7 @@ public class bici : MonoBehaviour
 
     }
 
-    private void OnMouseUp()
+    private void OnMouseUp()  //cuando se suelta el mouse, tmb vuelve a su posición inicial
     {
         isBeingHeld = false;
         this.gameObject.transform.localPosition = new Vector3(0, 0f, 0);
