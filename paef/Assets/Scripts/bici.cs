@@ -42,7 +42,7 @@ public class bici : MonoBehaviour
         Debug.Log("OnCollisionEnter");
         if (col.gameObject.tag == "Cuadras") {
             isBeingHeld=false;
-            this.transform.position = new Vector3(0, 2.6f, 0);
+            this.transform.position = new Vector3(0, 0f, 0);
         }
     }
 
@@ -67,7 +67,7 @@ public class bici : MonoBehaviour
     private void OnMouseUp()
     {
         isBeingHeld = false;
-        this.gameObject.transform.localPosition = new Vector3(0, 2.6f, 0);
+        this.gameObject.transform.localPosition = new Vector3(0, 0f, 0);
 
         
 

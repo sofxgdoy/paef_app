@@ -22,9 +22,9 @@ public class Barra : MonoBehaviour
     {
        
         barraEnergia = GetComponent<Image>();
-        maxDistance = finish.transform.position.x -2;
+        maxDistance = finish.transform.position.x + finish.transform.position.y;
 
-        barraEnergia.fillAmount = player.transform.position.x / maxDistance;
+        barraEnergia.fillAmount = (player.transform.position.x + player.transform.position.y)/ maxDistance;
         
     }
 
@@ -32,7 +32,7 @@ public class Barra : MonoBehaviour
     void FixedUpdate()
     {
         if (barraEnergia.fillAmount < 1) {
-            barraEnergia.fillAmount = player.transform.position.x / maxDistance;
+            barraEnergia.fillAmount = (player.transform.position.x + player.transform.position.y)/ maxDistance;
 
         }
         
