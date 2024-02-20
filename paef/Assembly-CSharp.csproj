@@ -48,6 +48,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\sceneManagement.cs" />
+     <Compile Include="Assets\Scripts\finishLine.cs" />
      <Compile Include="Assets\Scripts\Distance.cs" />
      <Compile Include="Assets\Scripts\Barra.cs" />
      <Compile Include="Assets\Scripts\bici.cs" />

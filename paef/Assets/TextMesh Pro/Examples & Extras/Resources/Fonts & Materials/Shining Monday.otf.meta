@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4afae4a232679da469134e77e152f56a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Shining Monday
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: cd00bdaa8283d7e429fd99ea425f16d6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
