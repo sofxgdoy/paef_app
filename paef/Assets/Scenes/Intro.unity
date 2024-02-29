@@ -816,9 +816,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tendr\xE1s como objetivo llegar a los cuadros rojos para recolectar la
-    mayor cantidad de energ\xEDa posible, eso har\xE1 que completes el nivel y puedas
-    continuar tu aventura."
+  m_text: "\xA1A nuestro amigo pepito le regalaron una bicicleta con un d\xEDnamo!
+    El dinamo es un aparato que transforma la energ\xEDa al pedalear en energ\xEDa
+    corriente. \xA1Ayuda a Pepito a generar energ\xEDa! \xBFCu\xE1nto hay que recorrer?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}

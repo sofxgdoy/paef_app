@@ -13,6 +13,8 @@ public class Barra : MonoBehaviour
     float maxDistance;
     float movedDistance;
     float llenado;
+
+    public GameObject falta;
    
 
     
@@ -45,6 +47,13 @@ public class Barra : MonoBehaviour
             barraEnergia.fillAmount =  (Vector3.Distance(beginning.transform.position, finish.transform.position) - Vector3.Distance(player.transform.position, finish.transform.position))/Vector3.Distance(beginning.transform.position, finish.transform.position);
             Debug.Log("Llenado"+ barraEnergia.fillAmount);
 
+        }
+
+        if (barraEnergia.fillAmount > 0.5) {
+            falta.gameObject.SetActive(true);
+
+        } else {
+            falta.gameObject.SetActive(false);
         }
         
        
